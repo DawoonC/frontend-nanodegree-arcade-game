@@ -197,6 +197,9 @@ Life.prototype.render = function() {
   }
   if (this.life === 0) {
     ctx.drawImage(Resources.get('images/gameover.png'), 0, 50);
+    ctx.font = '30px Arial';
+    ctx.fillStyle = 'white';
+    ctx.fillText("You've collected "+gameScore.score+" gems",300,420);
   }
 }
 /**
