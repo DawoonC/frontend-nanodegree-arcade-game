@@ -1,3 +1,60 @@
 body {
-    text-align: center;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+}
+h1 {
+  font-size: 3em;
+  display: block;
+  pointer-events: none;
+}
+#desc-box {
+  display: block;
+}
+#mobile-box {
+  display: none;
+}
+#restart-box {
+  display: block;
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border-radius: 10px;
+}
+#restart {
+  color: white;
+  height: auto;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-top: 0px;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  white-space: nowrap;
+  font-weight: bold;
+}
+#restart:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#restart:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: 0;
+}
+#restart:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 950px) {
+  #mobile-box {
+    display: block;
+    margin-top: 60px;
+  }
+  .desc {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  canvas, #restart-box {
+    display: none;
+  }
 }
